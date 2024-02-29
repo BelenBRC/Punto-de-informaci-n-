@@ -37,6 +37,7 @@
             this.font = new System.Windows.Forms.PictureBox();
             this.admin = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.PictureBox();
+            this.labelDireccion = new System.Windows.Forms.Label();
             this.flowLayoutControles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.web)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personal)).BeginInit();
@@ -56,10 +57,10 @@
             this.flowLayoutControles.Controls.Add(this.font);
             this.flowLayoutControles.Controls.Add(this.admin);
             this.flowLayoutControles.Controls.Add(this.exit);
-            this.flowLayoutControles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutControles.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutControles.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutControles.Name = "flowLayoutControles";
-            this.flowLayoutControles.Size = new System.Drawing.Size(956, 596);
+            this.flowLayoutControles.Size = new System.Drawing.Size(956, 553);
             this.flowLayoutControles.TabIndex = 0;
             // 
             // web
@@ -71,6 +72,7 @@
             this.web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.web.TabIndex = 0;
             this.web.TabStop = false;
+            this.web.Click += new System.EventHandler(this.web_Click);
             // 
             // personal
             // 
@@ -133,11 +135,24 @@
             this.exit.TabStop = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
+            // labelDireccion
+            // 
+            this.labelDireccion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelDireccion.AutoSize = true;
+            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDireccion.Location = new System.Drawing.Point(12, 566);
+            this.labelDireccion.Name = "labelDireccion";
+            this.labelDireccion.Size = new System.Drawing.Size(1165, 52);
+            this.labelDireccion.TabIndex = 1;
+            this.labelDireccion.Text = "Calle San Gregorio Alto, 5          18010 - Granada (España)";
+            this.labelDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // PanallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 596);
+            this.ClientSize = new System.Drawing.Size(956, 618);
+            this.Controls.Add(this.labelDireccion);
             this.Controls.Add(this.flowLayoutControles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -152,6 +167,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.admin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -165,5 +181,6 @@
         private System.Windows.Forms.PictureBox font;
         private System.Windows.Forms.PictureBox admin;
         private System.Windows.Forms.PictureBox exit;
+        private System.Windows.Forms.Label labelDireccion;
     }
 }
