@@ -83,6 +83,7 @@
             this.personal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.personal.TabIndex = 1;
             this.personal.TabStop = false;
+            this.personal.Click += new System.EventHandler(this.personal_Click);
             // 
             // map
             // 

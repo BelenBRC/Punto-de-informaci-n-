@@ -103,9 +103,29 @@ namespace PuntoInformacionCristoRey.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jaimeMatas {
+            get {
+                object obj = ResourceManager.GetObject("jaimeMatas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_Def_Fun_JGr_Hor__1_ {
             get {
                 object obj = ResourceManager.GetObject("Logo Def Fun JGr Hor (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap luisSerrano {
+            get {
+                object obj = ResourceManager.GetObject("luisSerrano", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

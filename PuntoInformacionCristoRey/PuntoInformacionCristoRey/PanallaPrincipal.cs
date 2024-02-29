@@ -26,6 +26,8 @@ namespace PuntoInformacionCristoRey
         Color amarillo = Color.FromArgb(242, 183, 5);
         Color blanco = Color.FromArgb(242, 242, 242);
 
+        Personal pantallaPersonal;
+
         public PanallaPrincipal(Bienvenida pantallaInicio)
         {
             InitializeComponent();
@@ -89,6 +91,15 @@ namespace PuntoInformacionCristoRey
         {
             //Abrir en el navegador la página web
             System.Diagnostics.Process.Start("https://www.cescristorey.com/");
+        }
+
+        private void personal_Click(object sender, EventArgs e)
+        {
+            //Abrir nuevo formulario
+            pantallaPersonal = new Personal(this);
+            pantallaPersonal.Show();
+            //Ocultar este formulario
+            this.Hide();
         }
     }
 }
