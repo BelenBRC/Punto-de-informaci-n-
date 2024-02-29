@@ -49,7 +49,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(111)))), ((int)(((byte)(140)))));
             this.label1.Location = new System.Drawing.Point(167, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(701, 104);
+            this.label1.Size = new System.Drawing.Size(695, 102);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido al punto de información\r\nCES Cristo Rey - Granada";
             this.label1.Click += new System.EventHandler(this.panelBienvenida_Click);
@@ -127,6 +127,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(992, 529);
             this.Controls.Add(this.splitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Bienvenida";
             this.Text = "PUNTO DE INFORMACIÓN CES CRISTO REY";

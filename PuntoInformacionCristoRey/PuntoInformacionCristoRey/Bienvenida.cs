@@ -24,6 +24,7 @@ namespace PuntoInformacionCristoRey
         Color amarillo = Color.FromArgb(242, 183, 5);
         Color blanco = Color.FromArgb(242, 242, 242);
 
+        PanallaPrincipal principal;
         public Bienvenida()
         {
             InitializeComponent();
@@ -65,8 +66,11 @@ namespace PuntoInformacionCristoRey
 
         private void panelBienvenida_Click(object sender, EventArgs e)
         {
-            //Ocultar imagen de bienvenida
-            pictureBox1.Visible = false;
+            //Ocultar este formulario
+            this.Hide();
+            //Enviar atributos a la pantalla principal
+            principal = new PanallaPrincipal(this);
+            principal.Show();
         }
     }
 }
