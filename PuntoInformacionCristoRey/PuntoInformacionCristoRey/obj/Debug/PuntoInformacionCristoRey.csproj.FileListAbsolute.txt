@@ -8,3 +8,13 @@ C:\Users\belen\Desktop\2DAM-DI\PuntoInformacionCristoRey\PuntoInformacionCristoR
 C:\Users\belen\Desktop\2DAM-DI\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.exe
 C:\Users\belen\Desktop\2DAM-DI\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.pdb
 C:\Users\belen\Desktop\2DAM-DI\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.Bienvenida.resources
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\PuntoInformacionCristoRey.exe.config
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\PuntoInformacionCristoRey.exe
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\PuntoInformacionCristoRey.pdb
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.csproj.AssemblyReference.cache
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.Bienvenida.resources
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.Properties.Resources.resources
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.csproj.GenerateResource.cache
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.csproj.CoreCompileInputs.cache
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.exe
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.pdb

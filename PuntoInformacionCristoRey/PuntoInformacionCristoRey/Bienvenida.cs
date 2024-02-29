@@ -58,14 +58,15 @@ namespace PuntoInformacionCristoRey
                 c.Font = dosisLight;
             }
 
-            label1.Font = new Font(dosis.Families[0], 26);
+            label1.Font = new Font(dosis.Families[0], 55);
             label2.Font = new Font(dosis.Families[0], 20);
 
         }
 
         private void panelBienvenida_Click(object sender, EventArgs e)
         {
-            
+            //Ocultar imagen de bienvenida
+            pictureBox1.Visible = false;
         }
     }
 }
