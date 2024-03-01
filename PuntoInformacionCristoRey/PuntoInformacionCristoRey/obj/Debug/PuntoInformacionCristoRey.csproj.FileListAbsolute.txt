@@ -20,3 +20,4 @@ C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\P
 C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.pdb
 C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.PanallaPrincipal.resources
 C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.Personal.resources
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.Planos.resources

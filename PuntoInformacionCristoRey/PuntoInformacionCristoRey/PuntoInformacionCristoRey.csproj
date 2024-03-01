@@ -53,6 +53,12 @@
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassPersonal.cs" />
+    <Compile Include="Planos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planos.Designer.cs">
+      <DependentUpon>Planos.cs</DependentUpon>
+    </Compile>
     <Compile Include="PanallaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Personal.resx">
       <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planos.resx">
+      <DependentUpon>Planos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +137,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\FotosPersonal\jaimeMatas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\planos\planta1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\planos\planta2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\planos\planta3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -27,6 +27,7 @@ namespace PuntoInformacionCristoRey
         Color blanco = Color.FromArgb(242, 242, 242);
 
         Personal pantallaPersonal;
+        Planos pantallaPlanos;
 
         public PanallaPrincipal(Bienvenida pantallaInicio)
         {
@@ -50,12 +51,25 @@ namespace PuntoInformacionCristoRey
 
             //Color de imagen de los controles
             web.BackColor = azulClaro;
-            personal.BackColor = amarillo;
-            map.BackColor = rosa;
-            form.BackColor = azulOscuro;
-            font.BackColor = rosa;
-            admin.BackColor = amarillo;
-            exit.BackColor = azulClaro;
+            personal.BackColor = rosa;
+            map.BackColor = azulOscuro;
+            form.BackColor = amarillo;
+            admin.BackColor = azulOscuro;
+            exit.BackColor = amarillo;
+
+            //Establecer anvho y alto de los controles
+            web.Width = 400;
+            web.Height = 400;
+            personal.Width = 400;
+            personal.Height = 400;
+            map.Width = 400;
+            map.Height = 400;
+            form.Width = 400;
+            form.Height = 400;
+            admin.Width = 400;
+            admin.Height = 400;
+            exit.Width = 400;
+            exit.Height = 400;
 
         }
 
@@ -98,6 +112,15 @@ namespace PuntoInformacionCristoRey
             //Abrir nuevo formulario
             pantallaPersonal = new Personal(this);
             pantallaPersonal.Show();
+            //Ocultar este formulario
+            this.Hide();
+        }
+
+        private void map_Click(object sender, EventArgs e)
+        {
+            //Abrir nuevo formulario
+            pantallaPlanos = new Planos(this);
+            pantallaPlanos.Show();
             //Ocultar este formulario
             this.Hide();
         }
