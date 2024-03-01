@@ -59,6 +59,12 @@
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassPersonal.cs" />
+    <Compile Include="ModoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModoAdmin.Designer.cs">
+      <DependentUpon>ModoAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioSugerencias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioSugerencias.resx">
       <DependentUpon>FormularioSugerencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModoAdmin.resx">
+      <DependentUpon>ModoAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanallaPrincipal.resx">
       <DependentUpon>PanallaPrincipal.cs</DependentUpon>

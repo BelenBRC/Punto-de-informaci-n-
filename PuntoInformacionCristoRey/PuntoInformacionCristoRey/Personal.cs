@@ -25,6 +25,7 @@ namespace PuntoInformacionCristoRey
         Color blanco = Color.FromArgb(242, 242, 242);
 
         PanallaPrincipal principal;
+        ModoAdmin modoAdmin;
 
         List<ClassPersonal> personal = new List<ClassPersonal>();
 
@@ -42,6 +43,9 @@ namespace PuntoInformacionCristoRey
             ClassPersonal p = new ClassPersonal();
             personal = p.leerDatos("personal.txt");
             mostrarPersonal();
+
+            //Añadir shortcut para el modo admin: Ctrl + A
+
         }
 
         private void pictureBoxRetroceder_Click(object sender, EventArgs e)
@@ -129,6 +133,14 @@ namespace PuntoInformacionCristoRey
                 //Añadir el panel al flowLayout
                 flowLayoutPanelPersonal.Controls.Add(panel);
             }
+        }
+
+        private void pictureBoxRetroceder_DoubleClick(object sender, EventArgs e)
+        {
+            //Modo admin
+            modoAdmin = new ModoAdmin(this);
+            modoAdmin.Show();
+            this.Hide();
         }
     }
 }
