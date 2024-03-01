@@ -79,7 +79,7 @@ namespace PuntoInformacionCristoRey
                 panel.Size = new Size(400, 400);
                 panel.BackColor = blanco;
                 panel.BorderStyle = BorderStyle.FixedSingle;
-                panel.Margin = new Padding(10);
+                panel.Margin = new Padding(50, 10, 50, 10);
                 panel.Padding = new Padding(10);
 
                 //Crear un label para el nombre
@@ -106,23 +106,19 @@ namespace PuntoInformacionCristoRey
                 {
                     labelHorario.Text = labelHorario.Text.Insert(i, "\n");
                 }
-                labelHorario.Size = new Size(400, 50);
+                labelHorario.Size = new Size(400, 60);
                 labelHorario.Font = dosisLight;
                 labelHorario.Dock = DockStyle.Top;
                 labelHorario.TextAlign = ContentAlignment.MiddleCenter;
                 labelHorario.ForeColor = amarillo;
 
-                //Crear un separador entre el horario y la imagen
-                Label separador = new Label();
-                separador.Text = " ";
-                separador.Dock = DockStyle.Top;
-
                 //Crear un pictureBox para la imagen
                 PictureBox pictureBox = new PictureBox();
                 pictureBox.Image = Image.FromFile(p.rutaImagen);
                 pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureBox.Dock = DockStyle.Fill;
                 pictureBox.BackColor = amarillo;
+                pictureBox.Size = new Size(300,300);
+                pictureBox.Dock = DockStyle.Bottom;
 
                 //Añadir los controles al panel
                 panel.Controls.Add(labelHorario);
