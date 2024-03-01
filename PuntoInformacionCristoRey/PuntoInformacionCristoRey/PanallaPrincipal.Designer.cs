@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanallaPrincipal));
             this.flowLayoutControles = new System.Windows.Forms.FlowLayoutPanel();
-            this.labelDireccion = new System.Windows.Forms.Label();
             this.web = new System.Windows.Forms.PictureBox();
             this.personal = new System.Windows.Forms.PictureBox();
             this.map = new System.Windows.Forms.PictureBox();
             this.form = new System.Windows.Forms.PictureBox();
             this.admin = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.PictureBox();
+            this.labelDireccion = new System.Windows.Forms.Label();
             this.flowLayoutControles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.web)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personal)).BeginInit();
@@ -60,18 +60,6 @@
             this.flowLayoutControles.Padding = new System.Windows.Forms.Padding(30, 0, 30, 0);
             this.flowLayoutControles.Size = new System.Drawing.Size(956, 618);
             this.flowLayoutControles.TabIndex = 0;
-            // 
-            // labelDireccion
-            // 
-            this.labelDireccion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelDireccion.AutoSize = true;
-            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDireccion.Location = new System.Drawing.Point(12, 566);
-            this.labelDireccion.Name = "labelDireccion";
-            this.labelDireccion.Size = new System.Drawing.Size(1139, 51);
-            this.labelDireccion.TabIndex = 1;
-            this.labelDireccion.Text = "Calle San Gregorio Alto, 5          18010 - Granada (España)";
-            this.labelDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // web
             // 
@@ -119,6 +107,7 @@
             this.form.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.form.TabIndex = 3;
             this.form.TabStop = false;
+            this.form.Click += new System.EventHandler(this.form_Click);
             // 
             // admin
             // 
@@ -141,6 +130,18 @@
             this.exit.TabIndex = 6;
             this.exit.TabStop = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
+            // labelDireccion
+            // 
+            this.labelDireccion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelDireccion.AutoSize = true;
+            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDireccion.Location = new System.Drawing.Point(12, 566);
+            this.labelDireccion.Name = "labelDireccion";
+            this.labelDireccion.Size = new System.Drawing.Size(1139, 51);
+            this.labelDireccion.TabIndex = 1;
+            this.labelDireccion.Text = "Calle San Gregorio Alto, 5          18010 - Granada (España)";
+            this.labelDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanallaPrincipal
             // 

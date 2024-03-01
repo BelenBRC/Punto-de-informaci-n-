@@ -28,6 +28,7 @@ namespace PuntoInformacionCristoRey
 
         Personal pantallaPersonal;
         Planos pantallaPlanos;
+        FormularioSugerencias pantallaSugerencias;
 
         public PanallaPrincipal(Bienvenida pantallaInicio)
         {
@@ -121,6 +122,15 @@ namespace PuntoInformacionCristoRey
             //Abrir nuevo formulario
             pantallaPlanos = new Planos(this);
             pantallaPlanos.Show();
+            //Ocultar este formulario
+            this.Hide();
+        }
+
+        private void form_Click(object sender, EventArgs e)
+        {
+            //Abrir nuevo formulario
+            pantallaSugerencias = new FormularioSugerencias(this);
+            pantallaSugerencias.Show();
             //Ocultar este formulario
             this.Hide();
         }
