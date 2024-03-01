@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanallaPrincipal));
             this.flowLayoutControles = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelDireccion = new System.Windows.Forms.Label();
             this.web = new System.Windows.Forms.PictureBox();
             this.personal = new System.Windows.Forms.PictureBox();
             this.map = new System.Windows.Forms.PictureBox();
             this.form = new System.Windows.Forms.PictureBox();
-            this.admin = new System.Windows.Forms.PictureBox();
+            this.calendario = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.PictureBox();
-            this.labelDireccion = new System.Windows.Forms.Label();
             this.flowLayoutControles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.web)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.admin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@
             this.flowLayoutControles.Controls.Add(this.personal);
             this.flowLayoutControles.Controls.Add(this.map);
             this.flowLayoutControles.Controls.Add(this.form);
-            this.flowLayoutControles.Controls.Add(this.admin);
+            this.flowLayoutControles.Controls.Add(this.calendario);
             this.flowLayoutControles.Controls.Add(this.exit);
             this.flowLayoutControles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutControles.Location = new System.Drawing.Point(0, 0);
@@ -60,6 +60,18 @@
             this.flowLayoutControles.Padding = new System.Windows.Forms.Padding(30, 0, 30, 0);
             this.flowLayoutControles.Size = new System.Drawing.Size(956, 618);
             this.flowLayoutControles.TabIndex = 0;
+            // 
+            // labelDireccion
+            // 
+            this.labelDireccion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelDireccion.AutoSize = true;
+            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDireccion.Location = new System.Drawing.Point(12, 566);
+            this.labelDireccion.Name = "labelDireccion";
+            this.labelDireccion.Size = new System.Drawing.Size(1139, 51);
+            this.labelDireccion.TabIndex = 1;
+            this.labelDireccion.Text = "Calle San Gregorio Alto, 5          18010 - Granada (España)";
+            this.labelDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // web
             // 
@@ -109,16 +121,17 @@
             this.form.TabStop = false;
             this.form.Click += new System.EventHandler(this.form_Click);
             // 
-            // admin
+            // calendario
             // 
-            this.admin.Image = global::PuntoInformacionCristoRey.Properties.Resources.admin;
-            this.admin.Location = new System.Drawing.Point(33, 355);
-            this.admin.Margin = new System.Windows.Forms.Padding(3, 3, 80, 3);
-            this.admin.Name = "admin";
-            this.admin.Size = new System.Drawing.Size(190, 170);
-            this.admin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.admin.TabIndex = 5;
-            this.admin.TabStop = false;
+            this.calendario.Image = global::PuntoInformacionCristoRey.Properties.Resources.calendario;
+            this.calendario.Location = new System.Drawing.Point(33, 355);
+            this.calendario.Margin = new System.Windows.Forms.Padding(3, 3, 80, 3);
+            this.calendario.Name = "calendario";
+            this.calendario.Size = new System.Drawing.Size(190, 170);
+            this.calendario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.calendario.TabIndex = 5;
+            this.calendario.TabStop = false;
+            this.calendario.Click += new System.EventHandler(this.calendario_Click);
             // 
             // exit
             // 
@@ -130,18 +143,6 @@
             this.exit.TabIndex = 6;
             this.exit.TabStop = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // labelDireccion
-            // 
-            this.labelDireccion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelDireccion.AutoSize = true;
-            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDireccion.Location = new System.Drawing.Point(12, 566);
-            this.labelDireccion.Name = "labelDireccion";
-            this.labelDireccion.Size = new System.Drawing.Size(1139, 51);
-            this.labelDireccion.TabIndex = 1;
-            this.labelDireccion.Text = "Calle San Gregorio Alto, 5          18010 - Granada (España)";
-            this.labelDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanallaPrincipal
             // 
@@ -159,7 +160,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.personal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.admin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -173,7 +174,7 @@
         private System.Windows.Forms.PictureBox personal;
         private System.Windows.Forms.PictureBox map;
         private System.Windows.Forms.PictureBox form;
-        private System.Windows.Forms.PictureBox admin;
+        private System.Windows.Forms.PictureBox calendario;
         private System.Windows.Forms.PictureBox exit;
         private System.Windows.Forms.Label labelDireccion;
     }

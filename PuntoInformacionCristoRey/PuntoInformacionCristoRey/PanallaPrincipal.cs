@@ -29,6 +29,7 @@ namespace PuntoInformacionCristoRey
         Personal pantallaPersonal;
         Planos pantallaPlanos;
         FormularioSugerencias pantallaSugerencias;
+        Calendario pantallaCalendario;
 
         public PanallaPrincipal(Bienvenida pantallaInicio)
         {
@@ -55,7 +56,7 @@ namespace PuntoInformacionCristoRey
             personal.BackColor = rosa;
             map.BackColor = azulOscuro;
             form.BackColor = amarillo;
-            admin.BackColor = azulOscuro;
+            calendario.BackColor = azulOscuro;
             exit.BackColor = amarillo;
 
             //Establecer anvho y alto de los controles
@@ -67,8 +68,8 @@ namespace PuntoInformacionCristoRey
             map.Height = 400;
             form.Width = 400;
             form.Height = 400;
-            admin.Width = 400;
-            admin.Height = 400;
+            calendario.Width = 400;
+            calendario.Height = 400;
             exit.Width = 400;
             exit.Height = 400;
 
@@ -132,6 +133,13 @@ namespace PuntoInformacionCristoRey
             pantallaSugerencias = new FormularioSugerencias(this);
             pantallaSugerencias.Show();
             //Ocultar este formulario
+            this.Hide();
+        }
+
+        private void calendario_Click(object sender, EventArgs e)
+        {
+            pantallaCalendario = new Calendario(this);
+            pantallaCalendario.Show();
             this.Hide();
         }
     }

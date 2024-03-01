@@ -26,3 +26,14 @@ C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\P
 C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\GMap.NET.WindowsForms.dll
 C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.csproj.CopyComplete
 C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.ModoAdmin.resources
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\PdfiumViewer.dll
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\Spire.Pdf.dll
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\Spire.PdfViewer.Asp.dll
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\Spire.PdfViewer.Forms.dll
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\Microsoft.mshtml.dll
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\PdfiumViewer.xml
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\Spire.Pdf.xml
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\Spire.PdfViewer.Asp.xml
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\Spire.PdfViewer.Forms.xml
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\bin\Debug\nl\PdfiumViewer.resources.dll
+C:\Users\belen\Desktop\2DAM-DI\Punto-de-informaci-n-\PuntoInformacionCristoRey\PuntoInformacionCristoRey\obj\Debug\PuntoInformacionCristoRey.Calendario.resources
