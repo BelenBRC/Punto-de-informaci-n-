@@ -40,12 +40,17 @@ namespace PuntoInformacionCristoRey
 
             inicializarFuente();
 
-            ClassPersonal p = new ClassPersonal();
-            personal = p.leerDatos("personal.txt");
             mostrarPersonal();
 
             //Añadir shortcut para el modo admin: Ctrl + A
 
+        }
+
+        private void leerDatos()
+        {
+            personal.Clear();
+            ClassPersonal p = new ClassPersonal();
+            personal = p.leerDatos("personal.txt");
         }
 
         private void pictureBoxRetroceder_Click(object sender, EventArgs e)
@@ -72,6 +77,12 @@ namespace PuntoInformacionCristoRey
 
         public void mostrarPersonal()
         {
+            //Limpiar el flowLayout
+            flowLayoutPanelPersonal.Controls.Clear();
+
+            leerDatos();
+
+            //Mostrar el personal
             foreach (ClassPersonal p in personal)
             {
                 //Crear un panel para cada persona
@@ -114,7 +125,15 @@ namespace PuntoInformacionCristoRey
 
                 //Crear un pictureBox para la imagen
                 PictureBox pictureBox = new PictureBox();
-                pictureBox.Image = Image.FromFile(p.rutaImagen);
+                try
+                {
+                    pictureBox.Image = Image.FromFile(p.rutaImagen);
+                }
+                catch (Exception ex)
+                {
+                    //Coloca una imagen por defecto si no se encuentra la imagen
+                    pictureBox.Image = Image.FromFile("FotosPersonal/default.png");
+                }
                 pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
                 pictureBox.BackColor = amarillo;
                 pictureBox.Size = new Size(300,300);

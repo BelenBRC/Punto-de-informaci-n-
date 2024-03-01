@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioSugerencias));
             this.panelFormulario = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxRetroceder = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonEnviar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBoxSugerencia = new System.Windows.Forms.RichTextBox();
-            this.buttonEnviar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxRetroceder = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelFormulario.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRetroceder)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelFormulario
@@ -56,28 +58,6 @@
             this.panelFormulario.Size = new System.Drawing.Size(846, 576);
             this.panelFormulario.TabIndex = 3;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PuntoInformacionCristoRey.Properties.Resources.sugerencias;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBoxRetroceder
-            // 
-            this.pictureBoxRetroceder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxRetroceder.Image = global::PuntoInformacionCristoRey.Properties.Resources.exit;
-            this.pictureBoxRetroceder.Location = new System.Drawing.Point(783, 3);
-            this.pictureBoxRetroceder.Name = "pictureBoxRetroceder";
-            this.pictureBoxRetroceder.Size = new System.Drawing.Size(60, 74);
-            this.pictureBoxRetroceder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxRetroceder.TabIndex = 2;
-            this.pictureBoxRetroceder.TabStop = false;
-            this.pictureBoxRetroceder.Click += new System.EventHandler(this.pictureBoxRetroceder_Click);
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -86,10 +66,25 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(111)))), ((int)(((byte)(140)))));
             this.label1.Location = new System.Drawing.Point(230, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 52);
+            this.label1.Size = new System.Drawing.Size(449, 51);
             this.label1.TabIndex = 4;
             this.label1.Text = "Buzón de sugerencias";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonEnviar
+            // 
+            this.buttonEnviar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(111)))), ((int)(((byte)(140)))));
+            this.buttonEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEnviar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.buttonEnviar.Location = new System.Drawing.Point(323, 484);
+            this.buttonEnviar.Name = "buttonEnviar";
+            this.buttonEnviar.Size = new System.Drawing.Size(241, 51);
+            this.buttonEnviar.TabIndex = 6;
+            this.buttonEnviar.Text = "ENVIAR";
+            this.buttonEnviar.UseVisualStyleBackColor = false;
+            this.buttonEnviar.Click += new System.EventHandler(this.buttonEnviar_Click);
             // 
             // groupBox1
             // 
@@ -115,20 +110,28 @@
             this.richTextBoxSugerencia.Text = "";
             this.richTextBoxSugerencia.Click += new System.EventHandler(this.richTextBoxSugerencia_Click);
             // 
-            // buttonEnviar
+            // pictureBox1
             // 
-            this.buttonEnviar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(111)))), ((int)(((byte)(140)))));
-            this.buttonEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEnviar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.buttonEnviar.Location = new System.Drawing.Point(323, 484);
-            this.buttonEnviar.Name = "buttonEnviar";
-            this.buttonEnviar.Size = new System.Drawing.Size(241, 51);
-            this.buttonEnviar.TabIndex = 6;
-            this.buttonEnviar.Text = "ENVIAR";
-            this.buttonEnviar.UseVisualStyleBackColor = false;
-            this.buttonEnviar.Click += new System.EventHandler(this.buttonEnviar_Click);
+            this.pictureBox1.Image = global::PuntoInformacionCristoRey.Properties.Resources.sugerencias;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 117);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBoxRetroceder
+            // 
+            this.pictureBoxRetroceder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxRetroceder.Image = global::PuntoInformacionCristoRey.Properties.Resources.exit;
+            this.pictureBoxRetroceder.Location = new System.Drawing.Point(783, 3);
+            this.pictureBoxRetroceder.Name = "pictureBoxRetroceder";
+            this.pictureBoxRetroceder.Size = new System.Drawing.Size(60, 74);
+            this.pictureBoxRetroceder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxRetroceder.TabIndex = 2;
+            this.pictureBoxRetroceder.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxRetroceder, "Volver al menú");
+            this.pictureBoxRetroceder.Click += new System.EventHandler(this.pictureBoxRetroceder_Click);
             // 
             // FormularioSugerencias
             // 
@@ -143,9 +146,9 @@
             this.Text = "PUNTO DE INFORMACIÓN CES CRISTO REY";
             this.panelFormulario.ResumeLayout(false);
             this.panelFormulario.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRetroceder)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -159,5 +162,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RichTextBox richTextBoxSugerencia;
         private System.Windows.Forms.Button buttonEnviar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

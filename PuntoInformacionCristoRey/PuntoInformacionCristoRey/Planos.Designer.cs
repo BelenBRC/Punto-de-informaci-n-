@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Planos));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.buttonPapeleríasCercanas = new System.Windows.Forms.Button();
             this.buttonPlanta3 = new System.Windows.Forms.Button();
             this.buttonPlanta2 = new System.Windows.Forms.Button();
             this.buttonPlanta1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.imagenPlano = new System.Windows.Forms.PictureBox();
-            this.buttonPapeleríasCercanas = new System.Windows.Forms.Button();
             this.mapasGoogle = new GMap.NET.WindowsForms.GMapControl();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -68,6 +70,21 @@
             this.splitContainer1.SplitterDistance = 187;
             this.splitContainer1.TabIndex = 0;
             // 
+            // buttonPapeleríasCercanas
+            // 
+            this.buttonPapeleríasCercanas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPapeleríasCercanas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(111)))), ((int)(((byte)(140)))));
+            this.buttonPapeleríasCercanas.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPapeleríasCercanas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.buttonPapeleríasCercanas.Location = new System.Drawing.Point(0, 312);
+            this.buttonPapeleríasCercanas.Name = "buttonPapeleríasCercanas";
+            this.buttonPapeleríasCercanas.Size = new System.Drawing.Size(186, 78);
+            this.buttonPapeleríasCercanas.TabIndex = 3;
+            this.buttonPapeleríasCercanas.Text = "Papelerías cercanas";
+            this.toolTip1.SetToolTip(this.buttonPapeleríasCercanas, "Mostrar mapa papelerías cercanas");
+            this.buttonPapeleríasCercanas.UseVisualStyleBackColor = false;
+            this.buttonPapeleríasCercanas.Click += new System.EventHandler(this.buttonPapeleríasCercanas_Click);
+            // 
             // buttonPlanta3
             // 
             this.buttonPlanta3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -79,6 +96,7 @@
             this.buttonPlanta3.Size = new System.Drawing.Size(186, 78);
             this.buttonPlanta3.TabIndex = 2;
             this.buttonPlanta3.Text = "3ª planta";
+            this.toolTip1.SetToolTip(this.buttonPlanta3, "Mostrar plano tercera planta");
             this.buttonPlanta3.UseVisualStyleBackColor = false;
             this.buttonPlanta3.Click += new System.EventHandler(this.buttonPlanta3_Click);
             // 
@@ -93,6 +111,7 @@
             this.buttonPlanta2.Size = new System.Drawing.Size(186, 78);
             this.buttonPlanta2.TabIndex = 1;
             this.buttonPlanta2.Text = "2ª planta";
+            this.toolTip1.SetToolTip(this.buttonPlanta2, "Mostrar plano segunda planta");
             this.buttonPlanta2.UseVisualStyleBackColor = false;
             this.buttonPlanta2.Click += new System.EventHandler(this.buttonPlanta2_Click);
             // 
@@ -107,6 +126,7 @@
             this.buttonPlanta1.Size = new System.Drawing.Size(186, 78);
             this.buttonPlanta1.TabIndex = 0;
             this.buttonPlanta1.Text = "1ª planta";
+            this.toolTip1.SetToolTip(this.buttonPlanta1, "Mostrar plano primera planta");
             this.buttonPlanta1.UseVisualStyleBackColor = false;
             this.buttonPlanta1.Click += new System.EventHandler(this.buttonPlanta1_Click);
             // 
@@ -121,6 +141,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Volver al menú");
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // imagenPlano
@@ -134,20 +155,6 @@
             this.imagenPlano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenPlano.TabIndex = 0;
             this.imagenPlano.TabStop = false;
-            // 
-            // buttonPapeleríasCercanas
-            // 
-            this.buttonPapeleríasCercanas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPapeleríasCercanas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(111)))), ((int)(((byte)(140)))));
-            this.buttonPapeleríasCercanas.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPapeleríasCercanas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.buttonPapeleríasCercanas.Location = new System.Drawing.Point(0, 312);
-            this.buttonPapeleríasCercanas.Name = "buttonPapeleríasCercanas";
-            this.buttonPapeleríasCercanas.Size = new System.Drawing.Size(186, 78);
-            this.buttonPapeleríasCercanas.TabIndex = 3;
-            this.buttonPapeleríasCercanas.Text = "Papelerías cercanas";
-            this.buttonPapeleríasCercanas.UseVisualStyleBackColor = false;
-            this.buttonPapeleríasCercanas.Click += new System.EventHandler(this.buttonPapeleríasCercanas_Click);
             // 
             // mapasGoogle
             // 
@@ -207,5 +214,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonPapeleríasCercanas;
         private GMap.NET.WindowsForms.GMapControl mapasGoogle;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

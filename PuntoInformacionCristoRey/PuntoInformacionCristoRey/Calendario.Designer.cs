@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendario));
             this.pictureBoxRetroceder = new System.Windows.Forms.PictureBox();
             this.pdfViewer1 = new Spire.PdfViewer.Forms.PdfViewer();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRetroceder)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,6 +46,7 @@
             this.pictureBoxRetroceder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxRetroceder.TabIndex = 3;
             this.pictureBoxRetroceder.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxRetroceder, "Volver al menú");
             this.pictureBoxRetroceder.Click += new System.EventHandler(this.pictureBoxRetroceder_Click);
             // 
             // pdfViewer1
@@ -83,5 +86,6 @@
 
         private System.Windows.Forms.PictureBox pictureBoxRetroceder;
         private Spire.PdfViewer.Forms.PdfViewer pdfViewer1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

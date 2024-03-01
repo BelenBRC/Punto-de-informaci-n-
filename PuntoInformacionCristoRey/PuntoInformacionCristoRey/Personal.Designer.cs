@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Personal));
             this.pictureBoxRetroceder = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanelPersonal = new System.Windows.Forms.FlowLayoutPanel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.flowLayoutPanelPersonal = new System.Windows.Forms.FlowLayoutPanel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRetroceder)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -50,17 +51,9 @@
             this.pictureBoxRetroceder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxRetroceder.TabIndex = 1;
             this.pictureBoxRetroceder.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxRetroceder, "Volver al menú");
             this.pictureBoxRetroceder.Click += new System.EventHandler(this.pictureBoxRetroceder_Click);
             this.pictureBoxRetroceder.DoubleClick += new System.EventHandler(this.pictureBoxRetroceder_DoubleClick);
-            // 
-            // flowLayoutPanelPersonal
-            // 
-            this.flowLayoutPanelPersonal.ContextMenuStrip = this.contextMenuStrip1;
-            this.flowLayoutPanelPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelPersonal.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelPersonal.Name = "flowLayoutPanelPersonal";
-            this.flowLayoutPanelPersonal.Size = new System.Drawing.Size(917, 554);
-            this.flowLayoutPanelPersonal.TabIndex = 2;
             // 
             // contextMenuStrip1
             // 
@@ -69,13 +62,13 @@
             this.adminToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 80);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(171, 52);
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.pictureBoxRetroceder_DoubleClick);
             // 
@@ -83,9 +76,19 @@
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.pictureBoxRetroceder_Click);
+            // 
+            // flowLayoutPanelPersonal
+            // 
+            this.flowLayoutPanelPersonal.AutoScroll = true;
+            this.flowLayoutPanelPersonal.ContextMenuStrip = this.contextMenuStrip1;
+            this.flowLayoutPanelPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelPersonal.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanelPersonal.Name = "flowLayoutPanelPersonal";
+            this.flowLayoutPanelPersonal.Size = new System.Drawing.Size(917, 554);
+            this.flowLayoutPanelPersonal.TabIndex = 2;
             // 
             // Personal
             // 
@@ -110,5 +113,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -136,10 +136,11 @@ namespace PuntoInformacionCristoRey
             dataGridViewPersonal.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             //Formato split container a proporción 4:1 (80% - 20%) en horizontal
-            splitContainer1.SplitterDistance = splitContainer1.Width * 80 / 100;
-            //Establecer la altura del split container
-            splitContainer1.Height = this.Height - 100;
-            
+            splitContainer1.SplitterDistance = splitContainer1.Width * 85 / 100;
+
+            //Ancho botones
+            buttonGuardar.Width = splitContainer1.Panel2.Width;
+            buttonRecargar.Width = splitContainer1.Panel2.Width;
         }
 
         private void buttonGuardar_Click(object sender, EventArgs e)
@@ -153,7 +154,11 @@ namespace PuntoInformacionCristoRey
             }
             //Guardar los datos en el fichero
             p.guardarDatos(fichero, personal);
+
             pantallaPersonal.mostrarPersonal();
+
+            //Mostrar mensaje de éxito
+            MessageBox.Show("Datos guardados correctamente");
         }
 
         private void buttonRecargar_Click(object sender, EventArgs e)

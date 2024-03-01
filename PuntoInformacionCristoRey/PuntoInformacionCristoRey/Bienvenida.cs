@@ -29,9 +29,6 @@ namespace PuntoInformacionCristoRey
         {
             InitializeComponent();
 
-            //Mostrar barra de título
-            this.FormBorderStyle = FormBorderStyle.Sizable;
-
             //Establecer el formulario en el centro de la pantalla
             this.StartPosition = FormStartPosition.CenterScreen;
 

@@ -73,6 +73,13 @@ namespace PuntoInformacionCristoRey
             exit.Width = 400;
             exit.Height = 400;
 
+            //Mostrar tooltip en los controles
+            toolTip1.SetToolTip(web, "Visitar la página web");
+            toolTip1.SetToolTip(personal, "Información sobre el personal");
+            toolTip1.SetToolTip(map, "Planos del centro y sitios de interés cercanos");
+            toolTip1.SetToolTip(form, "Enviar formulario de sugerencias");
+            toolTip1.SetToolTip(calendario, "Calendario escolar");
+            toolTip1.SetToolTip(exit, "Salir de la aplicación");
         }
 
         private void inicializarFuente()
